@@ -12,3 +12,4 @@
 */
 
 Route::get('/', NewsController::class .'@index');
+Route::get('/show', NewsController::class .'@show');

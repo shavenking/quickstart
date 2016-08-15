@@ -18,4 +18,11 @@ class NewsController extends Controller
 
         return view('test.index', compact('news'));
     }
+
+        public function show(Request $request, NewTable $newTable)
+    {
+        $news = $newTable->all();
+
+        return view('test.show', compact('news'));
+    }
 }
